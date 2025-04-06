@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tron Ship Energy Console</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="console-header">
+    <h1>🚀 TRON SHIP: MASS-ENERGY CORE</h1>
+    <p>Initiate conversion to power the quantum thrusters</p>
+  </div>
+
+  <div class="container">
+    <div class="input-group">
+      <label for="mass">Mass:</label>
+      <input type="number" id="mass" placeholder="Enter mass..." />
+      <select id="unit">
+        <option value="kg">kg</option>
+        <option value="g">grams</option>
+        <option value="ton">tons</option>
+      </select>
+    </div>
+
+    <button onclick="calculateEnergy()">Ignite Core</button>
+
+    <div id="result-display">
+      <h2>Output Console</h2>
+      <div id="result">Awaiting ignition...</div>
+    </div>
+
+    <div id="rocketContainer">
+      <img src="rocket.png" id="rocket" alt="rocket" />
+    </div>
+
+    <audio id="boomSound" src="boom.mp3" preload="auto"></audio>
+
+    <div class="theme-toggle">
+      <button onclick="toggleTheme()">Switch Theme</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>TronShip OS v1.4 — Developed by Leo & Friday</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
